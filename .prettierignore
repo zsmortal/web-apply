@@ -1,0 +1,6 @@
+# prettier ignore file
+node_modules
+dist
+pnpm-lock.yaml
+auto-imports.d.ts
+components.d.ts
