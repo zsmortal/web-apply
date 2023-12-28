@@ -96,8 +96,9 @@ export default ({ mode }) => {
         ext: '.gz'
       }),
       unpluginIcons({
-        compiler: 'vue3',
-        autoInstall: true, // 自动下载使用的图标集
+        compiler: 'vue3', // 编译方式
+        autoInstall: true, // 自动安装使用的图标集
+        scale: 1, // 缩放比（相对 1em）
         customCollections: {
           svg: FileSystemIconLoader('./src/assets/svg') // 存放 svg 图标的文件地址
         }
@@ -110,7 +111,10 @@ export default ({ mode }) => {
           filepath: '.eslintrc-auto-import.json',
           globalsPropValue: true
         },
-        resolvers: [IconsResolver({ prefix: 'icon' }), ElementPlusResolver()],
+        resolvers: [
+          IconsResolver({ prefix: 'icon' }), // 图标前缀，使用：icon-svg-xxx
+          ElementPlusResolver()
+        ],
         imports: ['vue', 'vue-router', 'pinia'], // 预设插件
         dts: './src/typings/auto-imports.d.ts' // 指定生成全局指令的文件目录
       }),
