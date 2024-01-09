@@ -1,7 +1,15 @@
 [data-theme="light"] {
   --el-closeBtn: #dcdfe6;
+  --page-bgColor: #f4f4f4;
+  --box-bgColor: #ffffff;
+  --table-headerColor: #333333;
+  --table-currentRowColor: var(--el-color-primary-light-9);
 }
 
 [data-theme="dark"] {
   --el-closeBtn: #4c4d4f;
+  --page-bgColor: #262626;
+  --box-bgColor: #000000;
+  --table-headerColor: #ffffff;
+  --table-currentRowColor: var(--el-color-primary-dark-9);
 }

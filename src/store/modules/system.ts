@@ -8,7 +8,7 @@ export const useSystemStore = defineStore('system', {
   state: (): System => ({
     layoutType: '', // 导航界面风格
     isPageNprogress: true, // 是否开启页面加载进度条
-    themeMode: 'light', // 系统模式（白：light   黑：dark   自动：auto）
+    themeMode: 'auto', // 系统模式（白：light   黑：dark   自动：auto）
     themeColor: '#409eff' // 主题颜色（element-plus）
   }),
   getters: {},

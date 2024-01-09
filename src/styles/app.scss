@@ -1,5 +1,6 @@
 body {
   line-height: 1 !important;
+  background-color: var(--page-bgColor);
 }
 
 #nprogress {
@@ -8,11 +9,27 @@ body {
   }
 
   & .peg {
-    box-shadow: 0 0 10px var(--el-color-primary), 0 0 5px var(--el-color-primary) !important;
+    box-shadow:
+      0 0 10px var(--el-color-primary),
+      0 0 5px var(--el-color-primary) !important;
   }
 
   & .spinner-icon {
     border-top-color: var(--el-color-primary);
     border-left-color: var(--el-color-primary);
   }
+}
+
+.page_box {
+  background-color: var(--box-bgColor);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: var(--el-color-primary);
 }

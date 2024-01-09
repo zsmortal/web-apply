@@ -1,7 +1,6 @@
 @mixin close_btn {
   width: 24px;
   height: 24px;
-  background-color: var(--el-closeBtn) !important;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -25,7 +24,7 @@
       cursor: pointer;
 
       &:hover {
-        opacity: 0.8;
+        background-color: var(--el-closeBtn) !important;
       }
 
       &:active {
@@ -48,7 +47,7 @@
       cursor: pointer;
 
       &:hover {
-        opacity: 0.8;
+        background-color: var(--el-closeBtn) !important;
       }
 
       &:active {
@@ -65,7 +64,7 @@
       cursor: pointer;
 
       &:hover {
-        opacity: 0.8;
+        background-color: var(--el-closeBtn) !important;
       }
 
       &:active {
@@ -105,4 +104,18 @@
 
 .el-transfer {
   --el-transfer-border-radius: 8px !important;
+}
+
+.table_header {
+  background-color: var(--el-fill-color-light) !important;
+
+  .cell {
+    font-weight: bold;
+    text-align: center;
+    color: var(--table-headerColor);
+  }
+}
+
+.current-row>td.el-table__cell {
+  background-color: var(--table-currentRowColor) !important;
 }
